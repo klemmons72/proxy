@@ -3,5 +3,5 @@
     "ssl": false,
     "prefix": "/web/",
     "localAddresses": [],
-    "blockedHostnames": ["https://google.com"]
+    "blockedHostnames": ["google.com"]
 }
