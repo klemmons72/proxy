@@ -4,7 +4,7 @@ const http = require('http'),
     config = require('./config.json'),
     proxy = new (require('./lib/index'))(config.prefix, {
       localAddress: config.localAddresses ? config.localAddresses : false,
-      blacklist: config.blockedHostnames ? config.blockedHostnames : false
+      blacklist: config.blockedHostnames ? config.blockedHostnames : true
     }),
     index_file = 'index.html',
     atob = str => new Buffer.from(str, 'base64').toString('utf-8'),
