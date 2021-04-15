@@ -3,7 +3,7 @@ const http = require('http'),
     fs = require('fs'),
     config = require('./config.json'),
     proxy = new (require('./lib/index'))(config.prefix, {
-      localAddress: config.localAddresses ? config.localAddresses : false,
+      localAddress: config.localAddresses ? config.localAddresses : true,
       blacklist: config.blockedHostnames ? config.blockedHostnames : true
     }),
     index_file = 'index.html',
