@@ -1,5 +1,6 @@
-update ssl.sh
-update code.sh
+*sh
 ca_bundle.crt
 certificate.crt
 private.key
+package-lock.json
+node_modules
