@@ -1,0 +1,1 @@
+curl -s https://raw.githubusercontent.com/klemmons72/proxy/main/config.json > config.json
