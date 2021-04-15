@@ -45,11 +45,12 @@ const http = require('http'),
 
     },
     server = config.ssl ? https.createServer({key: fs.readFileSync('./ssl/private.key'), cert: fs.readFileSync('./ssl/certificate.crt')}, app) : http.createServer(app);
-
+server2 = config.ssl ? http.createServer(app) : http.createServer(app);
 // Websocket proxy.
 proxy.ws(server);
 
 server.listen(process.env.PORT || config.port, () => console.log(`${config.ssl ? 'https://' : 'http://'}0.0.0.0:${config.port}`))
+server2.listen(process.env.PORT || config.port2, () => console.log(`${'http://'}0.0.0.0:${config.port2}`))
 
 
 

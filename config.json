@@ -1,5 +1,6 @@
 {
     "port": "443",
+    "port2": "80",
     "ssl": true,
     "prefix": "/web/",
     "localAddresses": [],
