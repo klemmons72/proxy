@@ -4,5 +4,5 @@
     "ssl": true,
     "prefix": "/web/",
     "localAddresses": [],
-    "blockedHostnames": ["youtube.com", "www.youtube.com"]
+    "blockedHostnames": ["youtube.com", "www.youtube.com", "m.youtube.com", "pornhub.com", "www.pornhub.com"]
 }
